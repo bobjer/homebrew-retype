@@ -1,6 +1,6 @@
 cask "retype" do
-  version "1.2"
-  sha256 "92e3a7d5aad3df5a4545e862b6a5ad9656431deebe637e8e66ea81088a9b1e81"
+  version "1.2.1"
+  sha256 "334cc5f34a6a62d38dacc29a0b1be67aad8eedb156524c32ab2b3c9b006fa372"
 
   url "https://github.com/bobjer/retype/releases/download/v#{version}/Retype-#{version}.zip"
   name "Retype"
