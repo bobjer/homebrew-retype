@@ -13,9 +13,8 @@ cask "retype" do
   app "Retype.app"
 
   # Remove Gatekeeper quarantine — app is ad-hoc signed (no Apple Developer ID)
-  postflight do
-    system_command "/usr/bin/xattr",
-                   args: ["-r", "-d", "com.apple.quarantine", "#{appdir}/Retype.app"],
-                   sudo: false
+  postflight_steps do
+    run "/usr/bin/xattr",
+        args: ["-r", "-d", "com.apple.quarantine", "{{appdir}}/Retype.app"]
   end
 end
